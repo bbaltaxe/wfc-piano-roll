@@ -16,7 +16,7 @@ import collections
 import uuid # used for tracking experiments
 
 try:
-    import Image
+    import Image 
 except ImportError:
     from PIL import Image
 
@@ -542,10 +542,33 @@ def string2bool(strn):
     return strn.lower() in ["true"]
     
 class Program:
+
+    
     def __init__(self):
         pass
     
     def Main(self):
+        self.random = random.Random()
+        a_model = OverlappingModel(48, 13, "Water", 3, True, True, 2,0)
+        
+        xdoc = ET.ElementTree(file="samples.xml")
+        counter = 1
+        for xnode in xdoc.getroot():
+            name = 'hog' 
+            for i in range(0, int(xnode.get("screenshots", 2))):
+                for k in range(0, 10):
+                    print("> ", end="")
+                    seed = self.random.random()
+                    finished = a_model.Run(seed, int(xnode.get("limit", 0)))
+                    if finished:
+                        print("DONE")
+                        a_model.Graphics().save("{0}_{1}_{2}_{3}.png".format(counter, name, i, uuid.uuid4()), format="PNG")
+                        break
+                    else:
+                        print("CONTRADICTION")
+ 
+    
+    """
         self.random = random.Random()
         xdoc = ET.ElementTree(file="samples.xml")
         counter = 1
@@ -563,7 +586,9 @@ class Program:
             print("< {0} ".format(name), end='')
             if "overlapping" == xnode.tag:
                 #print(xnode.attrib)
-                a_model = OverlappingModel(int(xnode.get('width', 48)), int(xnode.get('height', 48)), xnode.get('name', "NAME"), int(xnode.get('N', 2)), string2bool(xnode.get('periodicInput', True)), string2bool(xnode.get('periodic', False)), int(xnode.get('symmetry', 8)), int(xnode.get('ground',0)))
+#                a_model = OverlappingModel(int(xnode.get('width', 48)), int(xnode.get('height', 48)), xnode.get('name', "NAME"), int(xnode.get('N', 2)), string2bool(xnode.get('periodicInput', True)), string2bool(xnode.get('periodic', False)), int(xnode.get('symmetry', 8)), int(xnode.get('ground',0)))
+                a_model = OverlappingModel(48, 48, "Hogs", 3, True, True, 8,0)
+#
                 pass
             elif "simpletiled" == xnode.tag:
                     print("> ", end="\n")
@@ -586,7 +611,7 @@ class Program:
                         print("CONTRADICTION")
             counter += 1
         
-    
+"""    
 prog = Program()    
 prog.Main()
 
