@@ -10,6 +10,7 @@ Shoutout to this chord playing directory for helpming me figure out how to add s
 
 The best way to get started is to clone this directory to your machine and dive in! 
 The required packages for this project can be found in requirements.txt and installed to your environment using: 
+
 ```pip install -r requirements.txt```
 
 ## Generate images
@@ -21,6 +22,7 @@ Note of caution - images of > 100 pixels will take a looooong time to generate f
 
 Here's an example.
 To generate images based on the Water sample run the following: 
+
 ``` python wfc/wfc_main.py -f Water ```
 
 From one image you will get 5 unique images: 
@@ -41,7 +43,8 @@ If you would like more output images, to change the output dimensions, etc:
 
 ## Play your image
 
-To play an image, run the following with the file path of the desired image: 
+To play an image, run the following with the file path of the desired image:
+
 ```python soundify.py -f my/file/path.png```
 
 This defaults to playing based on a major scale. Chromatic and harmonic are also options. 
