@@ -1,3 +1,4 @@
+import argparse
 import pyaudio
 import numpy as np
 from collections import OrderedDict
@@ -6,7 +7,6 @@ try:
 except ImportError:
     from PIL import Image
 
-im = Image.open("wfc/Images/1_hog_2_166f5a8c-2a02-4b7a-9042-3c72868f4b13.png")
 background = (0,0,0)
 
 duration = 2     #length to play each pixel for
@@ -75,7 +75,20 @@ def stop():
 
 if __name__ == "__main__":
 
+
+    #commandline handling
+    parser = argparse.ArgumentParser(description='Performs wfc on an image to generate a specified number of images')
+    parser.add_argument('-f', dest='name', type=str , required=True,
+            help='path to image to play')
+    parser.add_argument('-o', dest='out', type=str, default='major',
+            help='What set of notes to play from. Options are chromatic, major, or harmonic.')
+
+    args = parser.parse_args()
+
     p = pyaudio.PyAudio()
+    
+    im = Image.open(args.name)
+    
     # for paFloat32 sample values must be in range [-1.0, 1.0]
     stream = p.open(format=pyaudio.paFloat32,
                 channels=1,
@@ -101,12 +114,15 @@ if __name__ == "__main__":
             if roll[i][j]:
                 chord.append(j+1)
         print(chord)
+        if(args.out == 'harmonic'):
         #harmonics
-        #A = make_chord(chord,fs,duration,440)
+            A = make_chord(chord,fs,duration,440)
+        elif(args.out == 'chromatic'):
         #from chromatic
-        A = make_chrom_chord(chord,fs,duration)
+            A = make_chrom_chord(chord,fs,duration)
+        else:
         #from Amaj scale
-        #A = make_scale_chord(chord,fs,duration)
+            A = make_scale_chord(chord,fs,duration)
 
         stream.write(volume*A)
 
