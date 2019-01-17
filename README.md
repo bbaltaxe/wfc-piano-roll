@@ -9,6 +9,8 @@ Shoutout to this chord playing directory for helpming me figure out how to add s
 # Getting started 
 
 The best way to get started is to clone this directory to your machine and dive in! 
+The required packages for this project can be found in requirements.txt and installed to your environment using: 
+```pip install -r requirements.txt```
 
 # Generate a images
 
@@ -22,6 +24,8 @@ To generate images based on the Water sample run the following:
 ``` python wfc/wfc_main.py -f Water ```
 
 From this you will get 5 unique images like this one: 
+![alt text](https://raw.githubusercontent.com/bbaltaxe/player_piano/master/example.png "example image")
+
 
 # Play your image
 
