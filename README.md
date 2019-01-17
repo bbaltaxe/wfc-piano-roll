@@ -1,4 +1,4 @@
-# playerpiano
+# wfc piano roll
 
 Play images like a piano roll!
 
