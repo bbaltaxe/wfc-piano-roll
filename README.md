@@ -19,7 +19,6 @@ Note of caution - images of > 100 pixels will take a looooong time to generate f
 
 Here's an example.
 To generate images based on the Water sample run the following: 
-
 ``` python wfc/wfc_main.py -f Water ```
 
 From this you will get 5 unique images like this one: 
