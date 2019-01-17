@@ -25,9 +25,8 @@ To generate images based on the Water sample run the following:
 
 From one image you will get 5 unique images: 
 
-<img src="https://raw.githubusercontent.com/bbaltaxe/player_piano/master/wfc/samples/Water.png" alt="example image" height="50"/>
----------->
-<img src="https://raw.githubusercontent.com/bbaltaxe/player_piano/master/example.png" alt="example image" height="50"/>
+<img src="https://raw.githubusercontent.com/bbaltaxe/player_piano/master/wfc/samples/Water.png" alt="example image" height="75"/> ---------->
+<img src="https://raw.githubusercontent.com/bbaltaxe/player_piano/master/example.png" alt="example image" height="75"/>
 
 # Play your image
 
