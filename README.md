@@ -56,5 +56,7 @@ For additional options:
   -o OUT      What set of notes to play from. Options are chromatic, major, or
               harmonic.
  ```
-Note - For now, if you would like to use the chromatic or major scale options, the max height of your image is 24 pix.
-Note - The default background is black. If your image's background is not black, you will need to change the background global variable in soundify.py
+
+*Note - For now, if you would like to use the chromatic or major scale options, the max height of your image is 24 pix.
+
+*Note - The default background is black. If your image's background is not black, you will need to change the background global variable in soundify.py
