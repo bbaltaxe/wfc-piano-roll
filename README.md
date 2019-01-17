@@ -23,9 +23,11 @@ Here's an example.
 To generate images based on the Water sample run the following: 
 ``` python wfc/wfc_main.py -f Water ```
 
-From this you will get 5 unique images like this one: 
-<img src="https://raw.githubusercontent.com/bbaltaxe/player_piano/master/wfc/samples/Water.png" alt="example image" height="100"/>
-<img src="https://raw.githubusercontent.com/bbaltaxe/player_piano/master/example.png" alt="example image" height="100"/>
+From one image you will get 5 unique images: 
+
+<img src="https://raw.githubusercontent.com/bbaltaxe/player_piano/master/wfc/samples/Water.png" alt="example image" height="50"/>
+---------->
+<img src="https://raw.githubusercontent.com/bbaltaxe/player_piano/master/example.png" alt="example image" height="50"/>
 
 # Play your image
 
