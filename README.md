@@ -59,6 +59,8 @@ For additional options:
  
  Here is the major based on the example above: 
  
+ (tba - see file: exmaj.mp4)
+ 
  <audio src="https://github.com/bbaltaxe/wfc-piano-roll/blob/master/exmaj.m4a?raw=true" controls preload></audio>
 
 *Note - For now, if you would like to use the chromatic or major scale options, the max height of your image is 24 pix.
