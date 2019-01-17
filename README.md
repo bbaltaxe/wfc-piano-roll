@@ -6,13 +6,13 @@ Uses ikarth's implementation of [mxgmn/WaveFunctionCollapse](https://github.com/
 
 Shoutout to this chord playing directory for helpming me figure out how to add sine waves together https://github.com/akkana/scripts/blob/master/play_chord.py
 
-# Getting started 
+## Getting started 
 
 The best way to get started is to clone this directory to your machine and dive in! 
 The required packages for this project can be found in requirements.txt and installed to your environment using: 
 ```pip install -r requirements.txt```
 
-# Generate a images
+## Generate images
 
 To generate an image from WaveFunctionCollapse, you will need an sample image to generate from. 
 You can choose an existing image from wfc/Samples/ or add your own .png there. 
@@ -36,8 +36,10 @@ If you would like more output images, to change the output dimensions, etc:
   -i [N]       number of images to create. defaults to 5
   -l [LENGTH]  length in pixels of images to create. defaults to 48
   -t [HEIGHT]  height in pixels of images to create. defaults to 13
+  
   ```
 
-# Play your image
+## Play your image
 
+Note - For now, if you would like to use the chromatic or major scale options, the max height of your image is 24 pix.
 Note - The default background is Black. If your image's background is not black, you will need to change the background global variable in soundify.py
