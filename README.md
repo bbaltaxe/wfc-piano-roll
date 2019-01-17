@@ -41,7 +41,7 @@ If you would like more output images, to change the output dimensions, etc:
   
   ```
 
-## Play your image
+## Play an image
 
 To play an image, run the following with the file path of the desired image:
 
