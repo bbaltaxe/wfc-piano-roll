@@ -41,5 +41,17 @@ If you would like more output images, to change the output dimensions, etc:
 
 ## Play your image
 
+To play an image, run the following with the file path of the desired image: 
+```python soundify.py -f my/file/path.png```
+
+This defaults to playing based on a major scale. Chromatic and harmonic are also options. 
+
+For additional options: 
+```optional arguments:
+  -h, --help  show this help message and exit
+  -f NAME     path to image to play
+  -o OUT      What set of notes to play from. Options are chromatic, major, or
+              harmonic.
+ ```
 Note - For now, if you would like to use the chromatic or major scale options, the max height of your image is 24 pix.
-Note - The default background is Black. If your image's background is not black, you will need to change the background global variable in soundify.py
+Note - The default background is black. If your image's background is not black, you will need to change the background global variable in soundify.py
