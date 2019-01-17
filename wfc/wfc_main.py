@@ -4,10 +4,10 @@ import xml.etree.ElementTree as ET
 import uuid
 
 iterations = 5
-name = "Water"
+name = "Bone"
 length = 48
 width = 13
-n = 3 #size of tiles to generate from
+n = 5 #size of tiles to generate from
 
 def generate(model):
     for i in range(iterations):
@@ -22,5 +22,7 @@ def generate(model):
 
 if __name__ == "__main__":
     
+    print("Creating Model...")
     a_model = model.OverlappingModel(length, width, name, n, True, True, 2,0)
+    print("Generating Outputs...")
     generate(a_model)

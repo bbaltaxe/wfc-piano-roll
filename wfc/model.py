@@ -142,7 +142,8 @@ class Model:
             while(presult):
                 presult = self.Propagate()
                 
-                self.Graphics().save("in_progress_{0}_{1}.png".format(hackstring, hackcount), format="PNG")
+                #Note - if you want to see in progress keep this line
+                #self.Graphics().save("in_progress_{0}_{1}.png".format(hackstring, hackcount), format="PNG")
                 hackcount += 1
 
                 #print("Propagate: {0}".format(pcount))
@@ -329,7 +330,8 @@ class OverlappingModel(Model):
             for y in range(ymin, ymax):
                 for x in range(xmin, xmax):
                     if p1[x + self.N * y] != p2[x - dx + self.N * (y - dy)]:
-                        print(p1[x + self.N * y] != p2[x - dx + self.N * (y - dy)])
+                        #print(p1[x + self.N * y] != p2[x - dx + self.N * (y - dy)])
+                        print('.')
                         ifany = False
                         #return False
             return ifany
