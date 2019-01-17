@@ -28,6 +28,16 @@ From one image you will get 5 unique images:
 <img src="https://raw.githubusercontent.com/bbaltaxe/player_piano/master/wfc/samples/Water.png" alt="example image" height="75"/> ---------->
 <img src="https://raw.githubusercontent.com/bbaltaxe/player_piano/master/example.png" alt="example image" height="75"/>
 
+If you would like more output images, to change the output dimensions, etc:
+```optional arguments:
+  -h, --help   show this help message and exit
+  -f NAME      source file name (located in samples/) to generate from. Do not
+               include file type.
+  -i [N]       number of images to create. defaults to 5
+  -l [LENGTH]  length in pixels of images to create. defaults to 48
+  -t [HEIGHT]  height in pixels of images to create. defaults to 13
+  ```
+
 # Play your image
 
 Note - The default background is Black. If your image's background is not black, you will need to change the background global variable in soundify.py
