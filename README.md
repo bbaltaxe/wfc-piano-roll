@@ -57,9 +57,8 @@ For additional options:
               harmonic.
  ```
  
- Here is the major based on the example above: 
+ Here are files you can dowload to hear the output based on the example above: 
  
- (see file: exmaj.mp4)
  [A Major Scale](https://github.com/bbaltaxe/wfc-piano-roll/blob/master/exmaj.m4a?raw=true)
  <audio src="https://github.com/bbaltaxe/wfc-piano-roll/blob/master/exmaj.m4a?raw=true" controls preload></audio>
 
